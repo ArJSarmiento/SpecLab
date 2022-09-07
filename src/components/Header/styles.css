@@ -1,0 +1,16 @@
+/* Header */
+header {
+    width: 100vw;
+    font-weight: bold;
+    text-align: center;
+    background: gold;
+    z-index: 2;
+  }
+  header h1 {
+    font-family: "Oswald", sans-serif;
+    font-size: 3rem;
+    color: white;
+    margin: 0;
+    padding: 1rem 0px;
+    text-shadow: 3px 4px rgba(0, 0, 0, 0.1);
+  }

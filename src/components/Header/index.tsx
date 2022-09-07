@@ -1,13 +1,2 @@
-import * as React from 'react';
-
-
-export interface  indexProps {
-}
-
-export function index (props:  indexProps) {
-  return (
-    <div>
-      
-    </div>
-  );
-}
+import Header from "./Header";
+export default Header;
