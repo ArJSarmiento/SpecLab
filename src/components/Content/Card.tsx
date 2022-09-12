@@ -1,4 +1,4 @@
-function Card(props: any) {
+function Card({props}: any) {
     return ( 
         <article className="card card--1">
         <div className="card__info-hover">
@@ -7,16 +7,16 @@ function Card(props: any) {
           </svg>
         </div>
         <div className="card__img" style={{
-          backgroundImage:  `url(${props.props.picture})`
+          backgroundImage:  `url(${props.picture})`
         }}></div>
         <div className="card_link">
           <div className="card__img--hover" style={{
-            backgroundImage: `url(${props.props.picture})`
+            backgroundImage: `url(${props.picture})`
           }}></div>
         </div>
         <div className="card__info">
-          <span className="card__category">{props.props.certainty}%</span>
-          <h3 className="card__title">{props.props.title}</h3>
+          <span className="card__category">{props.certainty}%</span>
+          <h3 className="card__title">{props.title}</h3>
         </div>
       </article>
     );
