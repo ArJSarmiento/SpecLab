@@ -1,12 +1,12 @@
 import Card from './Card';
-export default function Cards({props} : any) {
+export default function Cards({items} : any) {
   return (
     <div id="cardsDiv">
       <section className="cards">
         {
-          props.map((x:any) => {
+          items.map((x:any) => {
             return (
-              <Card props={x} key={x.id}/>
+              <Card item={x} key={x.id}/>
             )
           })
         }

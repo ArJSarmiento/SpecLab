@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import axios from "axios";
 import Cards from './Cards';
+import Upload from './Upload';
 import './styles.css';
 
 function Content() {
@@ -48,32 +49,11 @@ function Content() {
 
     return (
         <React.Fragment>
-            <div className="upload">
-                <input id="file" type="file" accept=".gif,.jpg,.jpeg,.png" name="imageFile" 
-                    onChange={(event)=> { 
-                        addFile(event) 
-                    }} 
-                />
-                <label htmlFor="file">
-                    <i className="material-icons">
-                        add_photo_alternate
-                    </i> 
-                    &nbsp;
-                    Choose a Photo
-                </label>
-
-                {
-                    showUpload ?
-                        <button id="submit" onClick={getPredictions} value="Upload">
-                            Upload
-                        </button>
-                    : null
-                }
-            </div>
+            <Upload addFile={addFile} getPredictions={getPredictions} showUpload={showUpload} />
             
             {
                 !loading && data.length!==0 ?
-                <Cards props={data}/>
+                <Cards items={data}/>
                 : null
             }
 
