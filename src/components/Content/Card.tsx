@@ -2,13 +2,13 @@ import axios from "axios";
 import { useState } from 'react';
 
 function Card({item}: any) {
-    const [img, setImg] = useState('');
+    const [img, setImg] = useState("https://images.pexels.com/photos/3683107/pexels-photo-3683107.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=350&w=467");
     const options = {
       method: 'GET',
       url: 'https://pexelsdimasv1.p.rapidapi.com/v1/search',
       params: {query: item.tag.en, locale: 'en-US', per_page: '1', page: '1'},
       headers: {
-        Authorization: '563492ad6f91700001000001692697fded6c41cb9d80c43577e2d08a',
+        Authorization: '563492ad6f91700001000001e6ad66c6551f40e3ba24640c557ee1d3',
         'X-RapidAPI-Key': '934e2328d9msh9e6f388587d46d0p10d8d4jsnad491ee8fa2d',
         'X-RapidAPI-Host': 'PexelsdimasV1.p.rapidapi.com'
       }
