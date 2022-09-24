@@ -140,6 +140,7 @@ footer {
     color: #868686;
 }
 #cardsDiv .card__title {
+    text-transform: capitalize;
     margin-top: 5px;
     margin-bottom: 10px;
     font-family: "Roboto Slab", serif;

@@ -1,4 +1,28 @@
+import axios from "axios";
+import { useState } from 'react';
+
 function Card({item}: any) {
+    const [img, setImg] = useState('');
+    const options = {
+      method: 'GET',
+      url: 'https://pexelsdimasv1.p.rapidapi.com/v1/search',
+      params: {query: item.tag.en, locale: 'en-US', per_page: '1', page: '1'},
+      headers: {
+        Authorization: '563492ad6f91700001000001692697fded6c41cb9d80c43577e2d08a',
+        'X-RapidAPI-Key': '934e2328d9msh9e6f388587d46d0p10d8d4jsnad491ee8fa2d',
+        'X-RapidAPI-Host': 'PexelsdimasV1.p.rapidapi.com'
+      }
+    };
+    
+    axios.request(options)
+    .then((response) => {
+      console.log(response.data);
+      setImg(response.data.photos[0].src.medium);
+    })
+    .catch((error) => {
+      console.error(error);
+    });
+
     return ( 
         <article className="card card--1">
         <div className="card__info-hover">
@@ -7,16 +31,16 @@ function Card({item}: any) {
           </svg>
         </div>
         <div className="card__img" style={{
-          backgroundImage:  `url(${item.picture})`
+          backgroundImage:  `url(${img})`
         }}></div>
         <div className="card_link">
           <div className="card__img--hover" style={{
-            backgroundImage: `url(${item.picture})`
+            backgroundImage: `url(${img})`
           }}></div>
         </div>
         <div className="card__info">
-          <span className="card__category">{item.certainty}%</span>
-          <h3 className="card__title">{item.title}</h3>
+          <span className="card__category">{parseFloat(item.confidence).toFixed(2)}%</span>
+          <h3 className="card__title">{item.tag.en}</h3>
         </div>
       </article>
     );

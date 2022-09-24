@@ -1,4 +1,5 @@
 import Card from './Card';
+
 export default function Cards({items} : any) {
   return (
     <div id="cardsDiv">

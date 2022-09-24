@@ -30,10 +30,10 @@ function Content() {
                 }
             })
             .then((resp) => {
-                setData(resp.data)
+                setData(resp.data.result.tags.slice(0, 10));
                 setShowUpload(true)
                 setLoading(false)
-                console.log(data)
+                console.log(resp.data.result.tags.slice(0, 10));
             }).catch((exception) => {
                 setShowUpload(true)
                 setLoading(false)
