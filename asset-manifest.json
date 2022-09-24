@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Image-Classifier-React/static/css/main.fbffacf2.css",
-    "main.js": "/Image-Classifier-React/static/js/main.9d182490.js",
+    "main.css": "/Image-Classifier-React/static/css/main.084e2218.css",
+    "main.js": "/Image-Classifier-React/static/js/main.f368b729.js",
     "static/js/787.e8bc28d8.chunk.js": "/Image-Classifier-React/static/js/787.e8bc28d8.chunk.js",
     "index.html": "/Image-Classifier-React/index.html",
-    "main.fbffacf2.css.map": "/Image-Classifier-React/static/css/main.fbffacf2.css.map",
-    "main.9d182490.js.map": "/Image-Classifier-React/static/js/main.9d182490.js.map",
+    "main.084e2218.css.map": "/Image-Classifier-React/static/css/main.084e2218.css.map",
+    "main.f368b729.js.map": "/Image-Classifier-React/static/js/main.f368b729.js.map",
     "787.e8bc28d8.chunk.js.map": "/Image-Classifier-React/static/js/787.e8bc28d8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fbffacf2.css",
-    "static/js/main.9d182490.js"
+    "static/css/main.084e2218.css",
+    "static/js/main.f368b729.js"
   ]
 }
