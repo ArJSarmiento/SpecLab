@@ -23,7 +23,7 @@ function Content() {
         const formData = new FormData()
         formData.append('imageFile', files.files[0])
         setShowUpload(false)
-        instance.post(url+'/classify', formData, {
+        instance.post('/classify', formData, {
                 headers: {
                 'accept': 'application/json',
                 'content-type': 'multipart/form-data'
