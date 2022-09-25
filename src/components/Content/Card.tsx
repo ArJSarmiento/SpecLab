@@ -16,7 +16,6 @@ function Card({item}: any) {
     
     axios.request(options)
     .then((response) => {
-      console.log(response.data);
       setImg(response.data.photos[0].src.medium);
     })
     .catch((error) => {
