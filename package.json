@@ -1,7 +1,7 @@
 {
   "name": "image-classifier-react",
   "version": "0.1.0",
-  "homepage": "https://arjsarmiento.github.io/Image-Classifier-React",
+  "homepage": "https://speclab.vercel.app/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",

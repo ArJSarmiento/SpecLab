@@ -1,6 +1,6 @@
 {
-  "short_name": "Image Classifier",
-  "name": "Image Classifier React",
+  "short_name": "SpecLab",
+  "name": "An Image Classification AI",
   "icons": [
     {
       "src": "icon.png",
