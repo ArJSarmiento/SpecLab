@@ -1,6 +1,6 @@
 function Upload(props:any) {
     return ( 
-        <div className="upload">
+    <div className="upload">
         <input id="file" type="file" accept=".gif,.jpg,.jpeg,.png" name="imageFile" 
             onChange={(event)=> { 
                 props.addFile(event) 

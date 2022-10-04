@@ -1,0 +1,65 @@
+.container main {
+  background: linear-gradient(90deg, #0C111F 1.85%, #0C111F 43.26%, rgba(12, 17, 31, 0.58) 62.17%, rgba(12, 17, 31, 0) 100%);
+}
+.container main div {
+  height: 100vh;
+  width: 40vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem;
+  gap: 2rem;
+}
+.container main div .mainText {
+  font-family: "Abril Fatface";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 4rem;
+  background: linear-gradient(90deg, #F6D365 0%, #FBB708 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+.container main div .mainText article span {
+  background: transparent;
+  -webkit-text-fill-color: rgb(255, 255, 255);
+}
+.container main div .subText {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.2rem;
+  line-height: 160%;
+  color: #FFFFFF;
+}
+.container main div .btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  gap: 14px;
+  background: linear-gradient(195.06deg, #F6D365 46.31%, #FBB708 103.28%), linear-gradient(195.06deg, #F6D365 46.31%, #FBB708 103.28%);
+  box-shadow: 0px 10px 10px rgba(246, 211, 101, 0.15);
+  border-radius: 40px;
+  width: 50%;
+  cursor: pointer;
+  text-decoration: none;
+}
+.container main div .btn span {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 36px;
+  text-align: center;
+  background: linear-gradient(180deg, #141414 0%, #383838 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+.container main div .btn:hover {
+  transform: scale(1.1);
+}/*# sourceMappingURL=index.css.map */

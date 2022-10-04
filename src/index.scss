@@ -1,5 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
 * {
   box-sizing: border-box;
 }
@@ -15,22 +16,22 @@ html {
   padding: 0;
 }
 
-.container {
+.container{
   background: url("./assets/images/toucan.jpg") no-repeat right center;
   background-size: contain;
 }
 
-.App {
+.App{
   height: 100vh;
   width: 100vw;
 }
 
 ::-webkit-scrollbar {
   width: 10px;
-  background: transparent;
+  background:transparent;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgb(171, 171, 171);
+  background: rgb(171,171,171);
   -webkit-border-radius: 2ex;
-}/*# sourceMappingURL=index.css.map */
+}

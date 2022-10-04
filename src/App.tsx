@@ -1,12 +1,20 @@
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header/';
-import Content from './components/Content/';
+import Home from './components/Home/';
+import Predict from './components/Predict/';
 
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <Content/>
-    </div>
+    <Router>  
+      <div className="App">
+        <Header />
+        <Routes>
+          <Route path='/' element={< Home />}></Route>
+          <Route path='/predict' element={< Predict />}></Route>
+          {/* <Route path='/contact' element={< Contact />}></Route> */}
+        </Routes>
+      </div>
+    </Router>
   );
 }
 

@@ -4,7 +4,7 @@ import Cards from './Cards';
 import Upload from './Upload';
 import './styles.css';
 
-function Content() {
+function Predict() {
     const [image, setImage] = useState({
         files : [],
     });
@@ -62,4 +62,4 @@ function Content() {
     );
 }
 
-export default Content;
+export default Predict;
