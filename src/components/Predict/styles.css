@@ -11,6 +11,7 @@ html {
 /* File upload */
 .upload {
   margin: 20vh 0px;
+  font-family: "Poppins";
 }
 
 .upload input[type=file] {
@@ -18,8 +19,8 @@ html {
 }
 
 .upload label {
-  color: white;
-  background-color: #ffd700;
+  color: #0C111F;
+  background: linear-gradient(195.06deg, #F6D365 46.31%, #FBB708 103.28%), linear-gradient(195.06deg, #F6D365 46.31%, #FBB708 103.28%);
   margin: auto;
   height: 60px;
   width: 50%;
@@ -29,7 +30,6 @@ html {
   align-items: center;
   right: 0;
   font-size: 20px;
-  font-family: "Oswald", sans-serif;
   cursor: pointer;
   border-radius: 5px;
 }
@@ -46,7 +46,6 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: "Oswald", sans-serif;
   cursor: pointer;
   border: 1px solid #ffd700;
 }

@@ -33,4 +33,11 @@ html {
 ::-webkit-scrollbar-thumb {
   background: rgb(171, 171, 171);
   -webkit-border-radius: 2ex;
+}
+
+@media only screen and (max-width : 600px) {
+  .container {
+    background: url("./assets/images/toucan.jpg") no-repeat center bottom;
+    background-size: contain;
+  }
 }/*# sourceMappingURL=index.css.map */

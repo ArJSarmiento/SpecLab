@@ -1,6 +1,10 @@
 /* Header */
+$media-desktop: "only screen and (max-width : 1024px)";
+$media-tablet: "only screen and (max-width : 768px)";
+$media-mobile: "only screen and (max-width : 600px)";
+$media-mobile-sm: "only screen and (max-width : 480px)";
 header {
-    width: 35%;
+    width: clamp(250px, 50vw, 50vw);
     text-align: left;
     position: fixed;
     top: 0;
@@ -27,5 +31,11 @@ header {
             font-weight: 500;
             line-height: 36px;
         }
+    }
+}
+
+@media #{$media-mobile} {
+    header{
+        width: 100% !important;
     }
 }

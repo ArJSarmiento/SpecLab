@@ -1,6 +1,6 @@
 /* Header */
 header {
-  width: 35%;
+  width: clamp(250px, 50vw, 50vw);
   text-align: left;
   position: fixed;
   top: 0;
@@ -25,4 +25,10 @@ header h1 a {
   font-size: 1.2rem;
   font-weight: 500;
   line-height: 36px;
+}
+
+@media only screen and (max-width : 600px) {
+  header {
+    width: 100% !important;
+  }
 }/*# sourceMappingURL=styles.css.map */
