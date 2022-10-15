@@ -1,6 +1,6 @@
 /* Header */
 header {
-  width: clamp(250px, 50vw, 50vw);
+  width: 100%;
   text-align: left;
   position: fixed;
   top: 0;
@@ -9,6 +9,7 @@ header {
   padding: 2rem;
 }
 header h1 {
+  width: clamp(250px, 40vw, 40vw);
   display: flex;
   justify-content: space-between;
 }
@@ -27,8 +28,19 @@ header h1 a {
   line-height: 36px;
 }
 
+header.blur {
+  transition: 0.5s all ease-in-out;
+  background: rgba(12, 17, 31, 0.58);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
+
 @media only screen and (max-width : 600px) {
   header {
+    width: 100% !important;
+    padding: 1rem;
+  }
+  header h1 {
     width: 100% !important;
   }
 }/*# sourceMappingURL=styles.css.map */

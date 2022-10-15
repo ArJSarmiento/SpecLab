@@ -7,17 +7,18 @@ $media-mobile: "only screen and (max-width : 600px)";
 $media-mobile-sm: "only screen and (max-width : 480px)";
 
 * {
-  box-sizing: border-box;
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  box-sizing:border-box;
 }
 
 body,
 html {
   font-family: "Roboto Slab", serif;
   overflow-x: hidden;
-  overflow-y: auto;
   scrollbar-width: thin;
-  margin: 0;
   width: 100%;
+  margin: 0;
   padding: 0;
 }
 
@@ -26,13 +27,8 @@ html {
   background-size: contain;
 }
 
-.App{
-  height: 100vh;
-  width: 100vw;
-}
-
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 5px;
   background:transparent;
 }
 

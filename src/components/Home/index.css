@@ -20,7 +20,7 @@
   font-family: "Abril Fatface";
   font-style: normal;
   font-weight: 400;
-  font-size: clamp(4rem, 2.5vw, 5rem);
+  font-size: clamp(4rem, 5vw, 5rem);
   background: linear-gradient(90deg, #f6d365 0%, #fbb708 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -75,20 +75,26 @@
 
 @media only screen and (max-width : 600px) {
   main {
+    margin-top: 20vh;
     grid-template-columns: 1fr !important;
     text-align: center;
   }
   main .blur {
     background: linear-gradient(180deg, #0c111f, rgba(12, 17, 31, 0.58) 30%, rgba(12, 17, 31, 0) 100%) !important;
-    height: 320px !important;
+    height: 252px !important;
   }
   main .content {
     padding: 0px !important;
+    padding-bottom: 10vh !important;
+    height: auto !important;
   }
   main .subText article {
     width: 100% !important;
   }
   main .btn {
     align-self: center;
+  }
+  main .mainText {
+    font-size: 3rem !important;
   }
 }/*# sourceMappingURL=index.css.map */
