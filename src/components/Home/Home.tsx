@@ -14,9 +14,7 @@ function Home() {
                         <article>
                         <span className="whiteText">SpecLab</span> AI
                         </article>
-                        <article>
-                        Predictions
-                        </article>
+                        <article>Predictions</article>
                     </section>
                     <section className="subText">
                         <article>
@@ -31,7 +29,9 @@ function Home() {
                         <img src="arrow-right.png" alt="arrow" />
                     </Link>
                 </div>
-                <div className="blur"></div>
+                <div className="toucan">
+                    <img src="toucan.jpg" alt="toucan" />
+                </div>
             </main> 
         </div>
     );

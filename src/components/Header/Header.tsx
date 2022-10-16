@@ -10,7 +10,7 @@ import {
 function Header() {
   const [scroll, setScroll] = useState(false);
   const scrollHandler = () =>{ 
-    setScroll(window.scrollY > 5);
+    setScroll(window.scrollY > 15);
   }
 
   useEffect(() => {

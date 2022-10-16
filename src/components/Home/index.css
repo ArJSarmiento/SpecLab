@@ -14,8 +14,14 @@
 .container main .content {
   background: #0C111F;
 }
-.container main .blur {
-  background: linear-gradient(90deg, #0c111f, rgba(12, 17, 31, 0.58) 30%, rgba(12, 17, 31, 0) 100%);
+.container main .toucan {
+  background: linear-gradient(90deg, #0c111f, rgba(12, 17, 31, 0.58) 30%, rgba(12, 17, 31, 0) 100%), url("../../assets/images/toucan.jpg") no-repeat right center;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+}
+.container main .toucan img {
+  display: none;
 }
 .container main div {
   height: 100vh;
@@ -82,19 +88,33 @@
   transform: scale(1.1);
 }
 
+@media only screen and (max-width : 1200px) {
+  .toucan {
+    background-size: contain !important;
+  }
+}
 @media only screen and (max-width : 600px) {
   .gridBG {
     top: -200px;
-    width: 100vw;
+    width: 100vw !important;
   }
   main {
     margin-top: 20vh;
     grid-template-columns: 1fr !important;
     text-align: center;
   }
-  main .blur {
+  main .toucan {
+    height: auto !important;
+    background: none !important;
+    display: inline-block !important;
     background: linear-gradient(180deg, #0c111f, rgba(12, 17, 31, 0.58) 30%, rgba(12, 17, 31, 0) 100%) !important;
-    height: 252px !important;
+  }
+  main .toucan img {
+    position: relative;
+    z-index: -1;
+    display: block !important;
+    height: auto;
+    width: 100%;
   }
   main .content {
     padding: 0px !important;

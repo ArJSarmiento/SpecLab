@@ -1,4 +1,4 @@
-$media-desktop: "only screen and (max-width : 1024px)";
+$media-desktop: "only screen and (max-width : 1200px)";
 $media-tablet: "only screen and (max-width : 768px)";
 $media-mobile: "only screen and (max-width : 600px)";
 $media-mobile-sm: "only screen and (max-width : 480px)";
@@ -20,13 +20,20 @@ $media-mobile-sm: "only screen and (max-width : 480px)";
     .content{
       background: #0C111F;
     }
-    .blur {
+    .toucan {
       background: linear-gradient(
         90deg, 
         #0c111f ,
         rgba(12, 17, 31, 0.58) 30%,
         rgba(12, 17, 31, 0) 100%
-        );
+      ),url("../../assets/images/toucan.jpg") no-repeat right center;
+      background-size: cover;
+      margin: 0;
+      padding: 0;
+
+      img{
+        display: none
+      }    
     }
 
     div {
@@ -106,16 +113,25 @@ $media-mobile-sm: "only screen and (max-width : 480px)";
   }
 }
 
+@media #{$media-desktop} {
+  .toucan {
+    background-size: contain !important;
+  }
+}
+
 @media #{$media-mobile} {
   .gridBG{
     top: -200px;
-    width: 100vw;
+    width: 100vw !important;
   }
 
   main {
     margin-top: 20vh;
 
-    .blur{
+    .toucan {
+      height: auto !important;
+      background: none !important;
+      display:inline-block !important;
       background: linear-gradient(
         180deg, 
         #0c111f,
@@ -123,7 +139,13 @@ $media-mobile-sm: "only screen and (max-width : 480px)";
         rgba(12, 17, 31, 0) 100%
       ) !important;
 
-      height: 252px !important;
+      img{
+        position:relative;
+        z-index:-1;
+        display: block !important;
+        height: auto;
+        width: 100%;
+      }
     }
 
     .content{
