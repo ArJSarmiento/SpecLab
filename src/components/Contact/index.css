@@ -1,0 +1,130 @@
+.contactPage {
+  margin: 10vh 0;
+  padding: 0 10vw;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+  align-items: center;
+  justify-items: center;
+  color: white;
+}
+.contactPage .gridBG {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: auto;
+  pointer-events: none;
+  z-index: 0;
+}
+.contactPage h1 {
+  font-weight: 600;
+  font-size: 2rem;
+  background: linear-gradient(90deg, #f6d365 0%, #fbb708 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+.contactPage span,
+.contactPage h3 {
+  text-align: justify;
+  font-size: 1rem;
+  line-height: 35px;
+}
+.contactPage span {
+  font-weight: 500;
+}
+.contactPage .info {
+  display: grid;
+  gap: 30px;
+  justify-items: center;
+  max-width: 500px;
+}
+.contactPage img {
+  height: 30vh;
+  width: auto;
+  border-radius: 100px 100px 0 0;
+  z-index: 1;
+}
+.contactPage .social-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.contactPage .social-buttons__button {
+  margin: 10px 5px 0;
+}
+.contactPage .social-button {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+  width: 65px;
+  height: 65px;
+  text-decoration: none;
+  border-radius: 100%;
+  background: #fff;
+  text-align: center;
+}
+.contactPage .social-button::after {
+  content: "";
+  position: absolute;
+  top: -1px;
+  left: 50%;
+  display: block;
+  width: 0;
+  height: 0;
+  border-radius: 100%;
+  transition: 0.3s;
+}
+.contactPage .social-button:focus, .contactPage .social-button:hover {
+  color: #fff !important;
+}
+.contactPage .social-button:focus::after, .contactPage .social-button:hover::after {
+  width: calc(100% + 2px);
+  height: calc(100% + 2px);
+  margin-left: calc(-50% - 1px);
+}
+.contactPage .social-button i,
+.contactPage .social-button svg {
+  position: relative;
+  z-index: 1;
+  transition: 0.3s;
+}
+.contactPage .social-button i {
+  font-size: 26px;
+}
+.contactPage .social-button svg {
+  height: 40%;
+  width: 40%;
+}
+.contactPage .social-button--mail {
+  color: #212121 !important;
+}
+.contactPage .social-button--mail::after {
+  background: #212121;
+}
+.contactPage .social-button--facebook {
+  color: #3b5999 !important;
+}
+.contactPage .social-button--facebook::after {
+  background: #3b5999;
+}
+.contactPage .social-button--linkedin {
+  color: #0077b5 !important;
+}
+.contactPage .social-button--linkedin::after {
+  background: #0077b5;
+}
+.contactPage .social-button--github {
+  color: #6e5494 !important;
+}
+.contactPage .social-button--github::after {
+  background: #6e5494;
+}
+@media only screen and (max-width: 472px) {
+  .contactPage section {
+    padding: 0;
+  }
+}/*# sourceMappingURL=index.css.map */

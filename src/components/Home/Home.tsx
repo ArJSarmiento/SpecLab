@@ -7,6 +7,7 @@ import './index.css';
 function Home() {
     return ( 
         <div className="container">
+            <img src="grid.png" alt="" className="gridBG" />
             <main>
                 <div className="content">
                     <section className="mainText">

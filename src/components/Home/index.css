@@ -1,3 +1,12 @@
+.container {
+  position: relative;
+}
+.container .gridBG {
+  position: absolute;
+  left: 0;
+  width: 100vh;
+  pointer-events: none;
+}
 .container main {
   display: grid;
   grid-template-columns: 1fr 3fr;
@@ -20,7 +29,7 @@
   font-family: "Abril Fatface";
   font-style: normal;
   font-weight: 400;
-  font-size: clamp(4rem, 5vw, 5rem);
+  font-size: clamp(4rem, 10vw, 6rem);
   background: linear-gradient(90deg, #f6d365 0%, #fbb708 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -74,6 +83,10 @@
 }
 
 @media only screen and (max-width : 600px) {
+  .gridBG {
+    top: -200px;
+    width: 100vw;
+  }
   main {
     margin-top: 20vh;
     grid-template-columns: 1fr !important;

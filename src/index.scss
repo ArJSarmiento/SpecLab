@@ -7,14 +7,27 @@ $media-mobile: "only screen and (max-width : 600px)";
 $media-mobile-sm: "only screen and (max-width : 480px)";
 
 * {
+  box-sizing:border-box;
+  user-select: none;
   -moz-box-sizing:border-box;
   -webkit-box-sizing:border-box;
-  box-sizing:border-box;
+
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  -webkit-tap-highlight-color: transparent;
 }
+
+button, 
+button:active, 
+button:focus {
+  outline: none;
+};
 
 body,
 html {
-  font-family: "Roboto Slab", serif;
+  font-family: 'Poppins';
   overflow-x: hidden;
   scrollbar-width: thin;
   width: 100%;

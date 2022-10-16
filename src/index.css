@@ -2,11 +2,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
 * {
   box-sizing: border-box;
+  user-select: none;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  -webkit-tap-highlight-color: transparent;
+}
+
+button,
+button:active,
+button:focus {
+  outline: none;
 }
 
 body,
 html {
-  font-family: "Roboto Slab", serif;
+  font-family: "Poppins";
   overflow-x: hidden;
   scrollbar-width: thin;
   width: 100%;

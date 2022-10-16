@@ -49,6 +49,7 @@ function Predict() {
 
     return (
         <React.Fragment>
+            <img src="grid.png" alt="" className="gridBG" />
             <Upload addFile={addFile} getPredictions={getPredictions} showUpload={showUpload} />
             
             {

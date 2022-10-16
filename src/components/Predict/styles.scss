@@ -1,4 +1,5 @@
 /* Footer */
+$media-mobile: "only screen and (max-width : 600px)";
 footer {
     padding: 3rem 0;
 }
@@ -6,6 +7,13 @@ footer {
 body,
 html {
     background: #0C111F ;
+}
+
+.gridBG{
+    position: fixed;
+    left: 0;
+    width: 100vw;
+    pointer-events: none;
 }
 
 /* File upload */
@@ -72,14 +80,15 @@ html {
     -webkit-justify-content: center;
 }
 #cardsDiv .card {
+    outline: none;
     cursor: pointer;
     transition: all 0.4s cubic-bezier(0.175, 0.885, 0, 1);
     background-color: #fff;
     width: clamp(300px, 33.3333333333%, 400px);
     position: relative;
-    border-radius: 12px;
     overflow: hidden;
-    box-shadow: 0px 13px 10px -7px rgba(0, 0, 0, 0.1);
+    box-shadow: 4px 12px 40px 2px rgba(12, 17, 31, 0.15);
+    border-radius: 50px
 }
 #cardsDiv .card:hover {
     box-shadow: 0px 30px 18px -8px rgba(0, 0, 0, 0.1);
@@ -136,7 +145,7 @@ html {
     top: 0;
 }
 #cardsDiv .card__category {
-    font-family: "Raleway", sans-serif;
+    font-family: 'Poppins';
     text-transform: uppercase;
     font-size: 13px;
     letter-spacing: 2px;
@@ -147,6 +156,14 @@ html {
     text-transform: capitalize;
     margin-top: 5px;
     margin-bottom: 10px;
-    font-family: "Roboto Slab", serif;
+    font-family: 'Poppins';
 } 
+
+
+@media #{$media-mobile} {
+    .gridBG{
+        top: 0;
+        width: 100vw;
+    }
+}
 
