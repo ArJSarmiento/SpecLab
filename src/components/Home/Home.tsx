@@ -2,7 +2,7 @@ import {
     BrowserRouter as Router,
     Link
   } from 'react-router-dom';
-import './index.css';
+import './index.scss';
 
 function Home() {
     return ( 
